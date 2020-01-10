@@ -1,0 +1,67 @@
+{
+  "0": {
+    "type": "order",
+    "name": "attack",
+    "description": "Attack.",
+    "texture": "data/graphix/testImages/orders/axe.png",
+    "allowedTypes": {},
+    "allowedUnits": {},
+    "target": 1,
+    "targetCount": 1,
+    "cost": 1,
+    "useNum": -1
+  },
+
+  "1": {
+    "type": "order",
+    "name": "move",
+    "description": "Move.",
+    "texture": "data/graphix/testImages/orders/34_b.png",
+    "allowedTypes": {},
+    "allowedUnits": {},
+    "target": 0,
+    "targetCount": 1,
+    "cost": 1,
+    "useNum": -1
+  },
+
+  "2": {
+    "type": "order",
+    "name": "charge",
+    "description": "Charge.",
+    "texture": "data/graphix/testImages/orders/hammer.png",
+    "allowedTypes": {},
+    "allowedUnits": {},
+    "target": 2,
+    "targetCount": 1,
+    "cost": 2,
+    "useNum": -1
+  },
+
+  "3": {
+    "type": "order",
+    "name": "prepare",
+    "description": "Preperation.",
+    "texture": "data/graphix/testImages/orders/spear.png",
+    "allowedTypes": {},
+    "allowedUnits": {},
+    "target": 3,
+    "targetCount": 1,
+    "cost": 1,
+    "useNum": -1
+  },
+
+  "4": {
+    "type": "order",
+    "name": "bleedingAttack",
+    "description": "Attack with bleeding.",
+    "texture": "data/graphix/testImages/orders/club.png",
+    "allowedTypes": {"0":"Ranger", "1": "Corsair"},
+    "allowedUnits": {},
+    "target": 1,
+    "targetCount": 1,
+    "cost": 2,
+    "useNum": 2
+  }
+
+}

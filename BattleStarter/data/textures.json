@@ -1,0 +1,96 @@
+{
+
+  "0": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/sideGuiBackground.bmp"
+  },
+
+  "1": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/klepsydra.bmp"
+  },
+
+  "2": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/granica.bmp"
+  },
+
+  "3": {
+    "type": "texture",
+    "name": "data/graphix/testImages/units/testwarrior.bmp"
+  },
+
+  "4": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/mainGuiBackground.bmp"
+  },
+
+  "5": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/exit.bmp"
+  },
+
+  "6": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/granica1.bmp"
+  },
+
+  "7": {
+    "type": "texture",
+    "name": "data/graphix/testImages/board/granica2.bmp"
+  },
+
+  "8": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/atak.bmp"
+  },
+
+  "9": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/ruch.bmp"
+  },
+
+  "10": {
+    "type": "texture",
+    "name": "data/graphix/testImages/units/background.bmp"
+  },
+
+  "11": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/background.bmp"
+  },
+
+  "12": {
+    "type": "texture",
+    "name": "data/graphix/testImages/background.bmp"
+  },
+  "13": {
+    "type": "texture",
+    "name": "data/graphix/testImages/units/lucznik.bmp"
+  },
+  "14": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/axe.png"
+  },
+  "15": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/34_b.png"
+  },
+  "16": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/hammer.png"
+  },
+  "17": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/spear.png"
+  },
+  "18": {
+    "type": "texture",
+    "name": "data/graphix/testImages/orders/club.png"
+  },
+  "19": {
+    "type": "texture",
+    "name": "data/graphix/testImages/units/wlocznik.bmp"
+  }
+
+}

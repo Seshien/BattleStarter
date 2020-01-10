@@ -1,0 +1,10 @@
+Player One
+testWarrior
+testWarrior
+Southern Watchman
+JorgvardScout
+Player Two
+testWarrior
+testWarrior
+Southern Watchman
+JorgvardScout

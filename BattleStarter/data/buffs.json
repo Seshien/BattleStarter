@@ -1,0 +1,42 @@
+{
+  "0": {
+    "type": "buff",
+    "name": "prepareBuff",
+    "buffType": 0,
+    "parameter": 3,
+    "time": 1,
+    "value": 0,
+    "valueParameter": 6,
+    "isGood": true
+  },
+
+  "1": {
+    "type": "buff",
+    "name": "bleedingBuff",
+    "buffType": 2,
+    "isGood": false
+  },
+
+  "2": {
+    "type": "buff",
+    "name": "ChargeBuff",
+    "buffType": 0,
+    "parameter": 2,
+    "time": 1,
+    "value": 0,
+    "valueParameter": 7,
+    "isGood": true
+  },
+
+  "3": {
+    "type": "buff",
+    "name": "MoveBuff",
+    "buffType": 0,
+    "parameter": 9,
+    "time": 1,
+    "value": 2,
+    "isGood": true
+  }
+
+
+}

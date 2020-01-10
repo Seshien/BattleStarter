@@ -1,0 +1,89 @@
+{
+  "0": {
+    "type": "gui",
+    "name": "MainGUI",
+    "strings": {
+      "background": "data/graphix/testImages/board/sideGuiBackground.bmp",
+      "hourglass": "data/graphix/testImages/board/klepsydra.bmp",
+      "exit": "data/graphix/testImages/board/exit.bmp",
+      "font": "data/fonts/arial.ttf",
+      "dispText0": "Tura gracza 1",
+      "dispText1": "Tura gracza 2",
+      "dispText2": "Faza walki"
+    },
+    "values": {
+      "widthR": 430,
+      "heightR": 1080,
+      "xPosR": 1490,
+      "yPosR": 0,
+      "xPosT": 100,
+      "yPosT": 100,
+      "xPosH": 100,
+      "yPosH": 500,
+      "xPosE": 410,
+      "yPosE": 0,
+      "xPosD": 20,
+      "yPosD": 770
+    }
+  },
+  "1": {
+    "type": "gui",
+    "name": "UnitRepresentation",
+    "strings": {
+      "background": "data/graphix/testImages/units/background.bmp"
+    },
+    "values": {
+      "size": 80,
+      "Padd": 4,
+      "hpBarx": 1,
+      "hpBary": 1,
+      "hpBarW": 78,
+      "hpBarH": 3,
+      "unitx": 1,
+      "unity": 5,
+      "unitW": 78,
+      "unitH": 74
+    }
+  },
+  "2": {
+    "type": "gui",
+    "name": "BoardGUI",
+    "strings": {
+      "border": "data/graphix/testImages/board/granica.bmp",
+      "background": "data/graphix/testImages/board/mainGuiBackground.bmp"
+    },
+    "values": {
+      "xPos": 20,
+      "yPos": 20,
+      "Padd": 4,
+      "PosSize": 80,
+      "widthR": 1340,
+      "heightR": 840
+    }
+  },
+  "3": {
+    "type": "gui",
+    "name": "OrderRepresentation",
+    "strings": {
+      "background": "data/graphix/testImages/orders/background.bmp"
+    },
+    "values": {
+      "widthR": 140,
+      "heightR": 220
+    }
+  },
+
+  "4": {
+    "type": "gui",
+    "name": "InfoGUI",
+    "strings": {
+      "background": "data/graphix/testImages/background.bmp"
+    },
+    "values": {
+      "widthR": 140,
+      "heightR": 220
+    }
+  }
+
+ 
+}
