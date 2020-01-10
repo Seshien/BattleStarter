@@ -7,22 +7,28 @@ import loader.UnitPrototype;
 
 public class Player 
 {
-	private int _gold;
-	public int GetGold() {return this._gold;}
+	private int gold;
+	private int maxGold;
+	public int GetMaxGold() {return this.maxGold;}
+	public int GetGold() {return this.gold;}
 	private List<Unit> _units;
 	public List<Unit> GetUnits() { return _units;}
 	public Player()
 	{
-		_gold = 0;
+		gold = 0;
+		this.maxGold = 0;
 		_units = new ArrayList<Unit>();
 	}
 	public Player(int gold)
 	{
-		_gold = gold;
+		this.maxGold = gold;
+		this.gold = gold;
 		_units = new ArrayList<Unit>();
 	}
 	public boolean BuyUnit(UnitPrototype unit)
 	{
+		if (_units.size() >= 15)
+			return false;
 		if (DeductGold(unit.GetCost()))
 		{
 			AddUnit(unit);
@@ -45,9 +51,9 @@ public class Player
 	}
 	public boolean DeductGold(int amount)
 	{
-		if (amount <= _gold)
+		if (amount <= gold)
 		{
-			_gold-=amount;
+			gold-=amount;
 			return true;
 		}
 		else
@@ -55,7 +61,7 @@ public class Player
 	}
 	public boolean AddGold(int amount)
 	{
-		_gold+=amount;
+		gold+=amount;
 		return true;
 	}
 	public boolean AddUnit(Unit unit)
@@ -74,5 +80,23 @@ public class Player
 		else
 			return false;
 	}
-
+	public void refreshGold()
+	{
+		gold=maxGold;
+		for (Unit unit : _units)
+			gold -=unit.GetPrototype().GetCost();
+	}
+	public boolean SetMaxGold(int amount) 
+	{
+		if (amount >= maxGold - gold)
+		{
+			maxGold = amount;
+			this.refreshGold();
+			return true;			
+		}
+		else
+			return false;
+				
+			
+	}
 }

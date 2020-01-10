@@ -4,10 +4,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.text.ParseException;
 
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
 
-public class EventHandler implements MouseListener, ActionListener {
+public class EventHandler implements MouseListener, ActionListener, PropertyChangeListener {
 	private GUI handledGui;
 	public GUI GetHandledGui () {return this.handledGui;}
 	public EventHandler(GUI gui) 
@@ -56,6 +60,25 @@ public class EventHandler implements MouseListener, ActionListener {
 	public void actionPerformed(ActionEvent e) 
 	{
 		handledGui.GetGame().saveArmy();
+	}
+	@Override
+	public void propertyChange(PropertyChangeEvent arg0) {
+		JFormattedTextField sender = (JFormattedTextField) arg0.getSource();
+		if (!handledGui.GetGame().GetPlayerOne().SetMaxGold((int) arg0.getNewValue()))
+		{
+			sender.setValue(arg0.getOldValue());
+		}
+		else if (!handledGui.GetGame().GetPlayerTwo().SetMaxGold((int) arg0.getNewValue()))
+		{
+			sender.setValue(arg0.getOldValue());
+		}
+		try {
+			sender.commitEdit();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		handledGui.GetInfoPanel().refresh();
 	}
 
 }

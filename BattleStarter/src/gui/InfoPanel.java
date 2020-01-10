@@ -1,12 +1,14 @@
 package gui;
 
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
 import javax.swing.JTextArea;
 
 public class InfoPanel extends Panel 
 {
 	JTextArea text;
-	JButton SaveArmy;
+	JButton saveArmy;
+	JFormattedTextField goldMax;
 	public InfoPanel(EventHandler ev) 
 	{
 		super(300,350, ev);
@@ -16,12 +18,18 @@ public class InfoPanel extends Panel
 	protected void Init()
 	{
 		text = new JTextArea();
-		SaveArmy = new JButton("Save");
-		SaveArmy.setBounds(260, 310, 30, 20);
-		SaveArmy.addActionListener(getEventHandler());
-		this.add(SaveArmy);
+		saveArmy = new JButton("Save");
+		saveArmy.setBounds(260, 310, 30, 20);
+		saveArmy.addActionListener(getEventHandler());
+		this.add(saveArmy);
+		
+		goldMax = new JFormattedTextField();
+		goldMax.setValue(getEventHandler().GetHandledGui().GetGame().GetPlayerOne().GetMaxGold());
+		goldMax.setColumns(6);
+		goldMax.addPropertyChangeListener("value", getEventHandler());
+		this.add(goldMax);
+		
 		text.setBounds(5, 5, 290, 300);
-		//text.setPreferredSize(new Dimension(290,340));
 		text.setWrapStyleWord(true);
 		text.setEditable(false);
 		text.setLineWrap(true);
