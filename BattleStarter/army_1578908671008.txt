@@ -1,0 +1,16 @@
+{
+    "0": "Gladiator",
+    "1": "Gladiator",
+    "2": "Southern Watchman",
+    "3": "Southern Axeman",
+    "4": "Light Militia",
+    "5": "testWarrior",
+    "6": "Treasure Hunter",
+    "7": "JorgvardScout"
+}{
+    "0": "testEliteGuard",
+    "1": "Light Spearman",
+    "2": "Heavy Spearman",
+    "3": "Light Scout",
+    "4": "Lorhien Guard"
+}

@@ -10,7 +10,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 import game.Unit;
-
+import loader.UnitPrototype;
+//Klasa graficzna rozszerzajaca JButton, sluzy do prezentacji jednostki
 public class UnitPortrait extends JButton 
 {
 	private Unit _unit;
@@ -29,7 +30,7 @@ public class UnitPortrait extends JButton
 		super(unit.GetPrototype().GetIcon());
         System.out.println(unit.GetPrototype().GetTexturePath());
 		_unit = unit;
-		this.setPreferredSize(new Dimension(60,60*2));
+		this.setPreferredSize(new Dimension(UnitPrototype.GetIconSize(),UnitPrototype.GetIconSize()*2));
 	}
 	
 }

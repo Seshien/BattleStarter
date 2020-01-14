@@ -3,7 +3,7 @@ import java.awt.*;
 
 import javax.swing.JPanel;
 
-
+//Klasa abstakcyjna rozszerzajaca JPanel
 public abstract class Panel extends JPanel 
 {
 	private EventHandler eventHandler;

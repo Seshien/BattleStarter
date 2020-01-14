@@ -5,6 +5,7 @@ import loader.PrototypeManager;
 import java.awt.EventQueue;
 
 import game.Game;
+//Klasa Main projektu, inicjalizuje glowne czesci projektu
 public class Application {
 
 	public static void main(String[] args) throws Exception 

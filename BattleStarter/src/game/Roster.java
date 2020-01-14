@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import loader.UnitPrototype;
-
+//Klasa spisu wszystkich mozliwych do wyboru jednostek
 public class Roster 
 {
 	private List<Unit> _units;

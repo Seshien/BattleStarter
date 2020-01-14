@@ -1,7 +1,7 @@
 package game;
 
 import loader.UnitPrototype;
-
+//Klasa sluzaca jako gloryfikowany wskaznik do unitprototype
 public class Unit 
 {
 	private UnitPrototype _prototype;

@@ -3,7 +3,7 @@ package gui;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.JTextArea;
-
+//Klasa graficzna rozszerzajaca Panel, sluzy do wymiany informacji z uzytkownikiem
 public class InfoPanel extends Panel 
 {
 	JTextArea text;

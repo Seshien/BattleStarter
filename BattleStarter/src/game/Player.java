@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import loader.UnitPrototype;
-
+//Klasa obslugujaca gracza 
 public class Player 
 {
 	private int gold;
@@ -25,6 +25,7 @@ public class Player
 		this.gold = gold;
 		_units = new ArrayList<Unit>();
 	}
+	
 	public boolean BuyUnit(UnitPrototype unit)
 	{
 		if (_units.size() >= 15)
@@ -49,37 +50,8 @@ public class Player
 		}
 		return false;
 	}
-	public boolean DeductGold(int amount)
-	{
-		if (amount <= gold)
-		{
-			gold-=amount;
-			return true;
-		}
-		else
-			return false;
-	}
-	public boolean AddGold(int amount)
-	{
-		gold+=amount;
-		return true;
-	}
-	public boolean AddUnit(Unit unit)
-	{
-		_units.add(unit);
-		return true;
-	}
-	public boolean AddUnit(UnitPrototype unit)
-	{
-		return AddUnit(new Unit(unit));
-	}
-	public boolean DeductUnit(Unit unit)
-	{
-		if(_units.remove(unit))
-			return true;
-		else
-			return false;
-	}
+	
+	
 	public void refreshGold()
 	{
 		gold=maxGold;
@@ -96,7 +68,39 @@ public class Player
 		}
 		else
 			return false;
-				
-			
 	}
+	
+	
+	private boolean DeductGold(int amount)
+	{
+		if (amount <= gold)
+		{
+			gold-=amount;
+			return true;
+		}
+		else
+			return false;
+	}
+	private boolean AddGold(int amount)
+	{
+		gold+=amount;
+		return true;
+	}
+	private boolean AddUnit(Unit unit)
+	{
+		_units.add(unit);
+		return true;
+	}
+	private boolean AddUnit(UnitPrototype unit)
+	{
+		return AddUnit(new Unit(unit));
+	}
+	private boolean DeductUnit(Unit unit)
+	{
+		if(_units.remove(unit))
+			return true;
+		else
+			return false;
+	}
+
 }

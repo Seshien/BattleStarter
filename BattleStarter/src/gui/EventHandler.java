@@ -10,7 +10,7 @@ import java.text.ParseException;
 
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
-
+//Klasa obslugujaca wszystkie wydarzenia
 public class EventHandler implements MouseListener, ActionListener, PropertyChangeListener {
 	private GUI handledGui;
 	public GUI GetHandledGui () {return this.handledGui;}

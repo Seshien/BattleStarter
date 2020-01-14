@@ -1,0 +1,7 @@
+<map id="gui.Panel" name="gui.Panel">
+<area shape="rect" id="node1" title=" " alt="" coords="115,131,251,296"/>
+<area shape="rect" id="node3" href="$classgui_1_1_info_panel.html" title=" " alt="" coords="5,344,101,495"/>
+<area shape="rect" id="node4" href="$classgui_1_1_player_panel.html" title=" " alt="" coords="126,351,239,487"/>
+<area shape="rect" id="node5" href="$classgui_1_1_roster_panel.html" title=" " alt="" coords="264,366,379,473"/>
+<area shape="rect" id="node2" title=" " alt="" coords="152,5,213,83"/>
+</map>

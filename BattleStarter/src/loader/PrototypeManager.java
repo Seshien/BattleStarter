@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+//Klasa obslugujaca wszystkie ladowane dane projektu
 public class PrototypeManager 
 {
 	private List<UnitPrototype> _units;

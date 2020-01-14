@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 
 import game.Game;
 
+//Glowna klasa graficzna, jest to potomek JFrame.
 public class GUI extends JFrame
 {
 	

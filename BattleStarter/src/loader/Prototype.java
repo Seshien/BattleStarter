@@ -1,7 +1,7 @@
 package loader;
 
 import org.json.JSONObject;
-
+//Klasa abstakcyjna, posiada funkcje poprawiajace komunikacje z JSONem
 public abstract class Prototype 
 {
 	@SuppressWarnings("unused")

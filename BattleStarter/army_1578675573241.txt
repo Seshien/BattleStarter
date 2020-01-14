@@ -1,0 +1,5 @@
+{
+    "0": "testWarrior",
+    "1": "Lorhien Guard",
+    "2": "Lorhien Guard"
+}{"0":"Light Scout","1":"Light Scout","2":"Light Scout","3":"Heavy Crossbow Warden","4":"Heavy Crossbow Warden"}

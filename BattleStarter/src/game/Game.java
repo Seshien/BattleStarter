@@ -1,10 +1,12 @@
 package game;
 
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.List;
 
 import loader.JsonLoader;
 import loader.PrototypeManager;
-
+// Glowna klasa gry, posiada obiekty logiczne roster oraz graczy, obsluguje wydarzenia z GUI oraz zapisuje wynik aplikacji.
 public class Game 
 {
 	private Roster rooster;
@@ -39,15 +41,14 @@ public class Game
 	}
 	public void saveArmy() 
 	{
-		String text = new String();
-		text=text.concat("Player One" + System.lineSeparator());
+		ArrayList<String> firstArmy = new ArrayList<String>();
+		ArrayList<String> secondArmy = new ArrayList<String>();
+		
 		for (Unit unit : this.GetPlayerOne().GetUnits())
-			text=text.concat(unit.GetPrototype().GetName() + System.lineSeparator());
-		text=text.concat("Player Two" + System.lineSeparator());
-		for (Unit unit : this.GetPlayerOne().GetUnits())
-			text=text.concat(unit.GetPrototype().GetName() + System.lineSeparator());
-		System.out.println(text);
+			firstArmy.add(unit.GetPrototype().GetName());
+		for (Unit unit : this.GetPlayerTwo().GetUnits())
+			secondArmy.add(unit.GetPrototype().GetName());
 		JsonLoader saver = new JsonLoader();
-		saver.saveToFile(text, text);
+		saver.saveToFile(firstArmy, secondArmy);
 	}
 }

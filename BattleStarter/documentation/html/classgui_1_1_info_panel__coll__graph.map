@@ -1,0 +1,8 @@
+<map id="gui.InfoPanel" name="gui.InfoPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="200,360,296,481"/>
+<area shape="rect" id="node2" href="$classgui_1_1_panel.html" title=" " alt="" coords="5,132,141,297"/>
+<area shape="rect" id="node3" title=" " alt="" coords="43,5,104,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="165,176,232,253"/>
+<area shape="rect" id="node5" title=" " alt="" coords="259,176,339,253"/>
+<area shape="rect" id="node6" title=" " alt="" coords="363,176,503,253"/>
+</map>

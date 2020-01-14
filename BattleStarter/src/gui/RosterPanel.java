@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import game.Roster;
 import game.Unit;
-
+//Klasa graficzna obslugujaca roster
 public class RosterPanel extends Panel {
 
 	private Roster _roster;

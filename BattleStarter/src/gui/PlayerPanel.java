@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import game.Player;
 import game.Unit;
-
+//Klasa graficzna rozszerzajaca Panel obslugujaca gracza
 public class PlayerPanel extends Panel {
 
 	private Player _player;

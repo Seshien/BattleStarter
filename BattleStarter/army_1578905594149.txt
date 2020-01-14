@@ -1,0 +1,18 @@
+{
+    "0": "Light Militia",
+    "1": "Light Militia",
+    "2": "Light Militia",
+    "3": "Palace Guard",
+    "4": "Treasure Hunter",
+    "5": "JorgvardScout",
+    "6": "JorgvardScout",
+    "7": "testWarrior",
+    "8": "testArcher",
+    "9": "Light Spearman"
+}{
+    "0": "Heavy Spearman",
+    "1": "Heavy Spearman",
+    "2": "Light Spearman",
+    "3": "Light Spearman",
+    "4": "JorgvardScout"
+}

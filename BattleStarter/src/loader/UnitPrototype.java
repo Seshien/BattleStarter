@@ -9,8 +9,9 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 import org.json.JSONObject;
-
-public class UnitPrototype extends Prototype {
+//Klasa powstajaca z jsona, zawiera wszystkie parametry jednostek
+public class UnitPrototype extends Prototype 
+{
 	String name;
 	public String GetName() {return this.name;}
 	String unitType;
@@ -50,6 +51,8 @@ public class UnitPrototype extends Prototype {
 	BufferedImage textureImage;
 	public BufferedImage GetTexture() {return this.textureImage;}
 	ImageIcon textureIcon;
+	private static int iconSize = 60;
+	public static int GetIconSize() {return iconSize;}
 	public ImageIcon GetIcon() {return this.textureIcon;}
 	
 	public UnitPrototype(JSONObject asset) 
@@ -81,11 +84,12 @@ public class UnitPrototype extends Prototype {
 		texture=asset.getString("texture");
 		try {
 			textureImage = ImageIO.read(new File(this.GetTexturePath()));
-			textureIcon = new ImageIcon(GetTexture().getScaledInstance(60, 2*60, Image.SCALE_DEFAULT));
+			textureIcon = new ImageIcon(GetTexture().getScaledInstance(iconSize, 2*iconSize, Image.SCALE_DEFAULT));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
 
 }
